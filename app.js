@@ -29,6 +29,10 @@ app.get('/', function(req, res){
     });
 });
 
+app.get('/sign-up', function(req, res){
+    res.render('sign-up');
+});
+
 app.get('/', function(req, res){
     res.sendFile('./views/home', {root: __dirname});
 });
