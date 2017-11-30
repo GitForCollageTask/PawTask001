@@ -44,7 +44,7 @@
 padding: 5px 10px;
 background:#ccc;
 color:#444;
-border: 0;
+border: 0px;
 width: 150px;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
@@ -56,12 +56,12 @@ outline: 0;
 }
 
 .searchBtn {
-border: 0;
+border: 0px;
 position: absolute;
 width: 38px;
 cursor: pointer;
 margin: 2px -38PX;
-border-left: 2px solid skyblue;
+border-left: 0px;
 height: 26px;
 font-weight: 900;
 font-size: 12px;
@@ -80,8 +80,8 @@ border-radius:0px 5px 5px 0px;
 display:none;
 background-color:white;
 color: #3b3835;
-border: 1px solid rgba(0,0,0,0.3);
-border-top: 0;
+border: 0px;
+border-top: 0px;
 float: left;
 left: 0;
 list-style: none;
@@ -120,7 +120,7 @@ color:white;
 }
 
 .searchForm:nth-child(2) .suggestionBox::before {
-  border-bottom: 7px solid skyblue;
+  border-bottom: 0px;
 }
 
 .searchForm:nth-child(3){
@@ -133,7 +133,7 @@ color:black;
 }
 
 searchForm:nth-child(3) .suggestionBox::before {
-  border-bottom: 7px solid beige;
+  border-bottom: 0px;
 }
 
 .searchForm:nth-child(4){
@@ -146,5 +146,5 @@ color:white;
 }
 
 .searchForm:nth-child(4) .suggestionBox::before {
-  border-bottom: 7px solid #859ce6;
+  border-bottom: 0px;
 }
