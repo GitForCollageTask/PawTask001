@@ -9,8 +9,12 @@
   "author": "Ibnu Aziz N",
   "license": "ISC",
   "dependencies": {
+    "connect": "^3.6.5",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "express-session": "^1.15.6"
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "routes": "^2.1.0"
   }
 }
