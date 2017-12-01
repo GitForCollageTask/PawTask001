@@ -26,7 +26,7 @@ exports.redirect = function(req, res){
     }
 };
 exports.notFound = function(req, res){
-    res.send("<h2>Page Not Found</h2>");
+   res.send("<h1>File Not Found</h1>");
 };
 exports.listen = function(req, res){
     console.log("This application running at port 3000");
