@@ -3,9 +3,10 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var routes = require('./routes');
+var signup = require('./routes/signup');
+var mysql = require('mysql');
 var session;
 var app = express();
-
 app.set('view engine', 'ejs');
 //path
 app.set('views', path.join(__dirname, 'views'));
