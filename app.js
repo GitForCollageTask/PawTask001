@@ -33,15 +33,19 @@ app.get('/sign-up', function(req, res){
     res.render('sign-up');
 });
 
+app.get('/admin', function(req, res){
+    res.render('admin');
+});
+
 app.get('/', function(req, res){
     res.sendFile('./views/home', {root: __dirname});
 });
 
-app.post('/login', function(req, res){
+app.post('/admin', function(req, res){
     session = req.session;
     //res.end(JSON.stringify(req.body));
-    if(req.body.email == 'ibnuaziznu@gmail.com' && req.body.password == 'admin'){
-        session.uniqueID = req.body.email;
+    if(req.body.username == 'ibnuaziz' && req.body.password == 'admin'){
+        session.uniqueID = req.body.username;
     }
     res.redirect('/redirects');
 });
@@ -49,7 +53,7 @@ app.post('/login', function(req, res){
 app.get('/redirects', function(req, res){
     session = req.session;
     if(session.uniqueID){
-        res.redirect('/admin');
+        res.redirect('/');
     }else{
         res.end('Who Are You???');
     }
