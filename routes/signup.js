@@ -18,8 +18,29 @@ con.connect(function (err){
 	console.log('Connected!!');
 });
 
-con.end(function(err){
-	if(err){
-		console.log('connection disconnect erro!!');
-	}
-});
+
+		var data = {
+			id_masjid : 003,
+			nama_lengkap : 'Ibnu Aziz Nu',
+			email : 'ibnuazizn@gmail.com',
+			username : 'ibnuazizn',
+			password : 'ibnuaziz',
+			no_telpon : 089765456897
+		};
+
+		con.query('INSERT INTO users set ?', data, function(err, result){
+			if(err){
+				console.log(err);
+				return;
+				//res.redirect('/login');
+			}
+				console.log("Succesfully insert : ", result);
+		});
+
+		con.query('SELECT * FROM users', function(err, rows){
+			if(err){
+				console.log(err);
+				return;
+			}
+			console.log(rows);
+		});
