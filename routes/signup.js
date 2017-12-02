@@ -19,7 +19,7 @@ con.connect(function (err){
 });
 
 
-		var data = {
+		/*var data = {
 			id_masjid : 003,
 			nama_lengkap : 'Ibnu Aziz Nu',
 			email : 'ibnuazizn@gmail.com',
@@ -44,3 +44,4 @@ con.connect(function (err){
 			}
 			console.log(rows);
 		});
+		*/
