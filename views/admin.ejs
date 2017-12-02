@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" type="image/png" href="/../images/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="/../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/../css/admin.css">
-	<title>Admin Login</title>
+	<% include partials/head.ejs %>
+	<title><%=title%></title>
 </head>
 <body>
 <div class = "container">
 	<div class="wrapper">
-		<form action="/admin" method="post" name="Login_Form" class="form-signin">       
+		<form action="/homeAdmin" method="post" name="Login_Form" class="form-signin">       
 		    <h3 class="form-signin-heading">Welcome Back Admin! Please Sign In</h3>
 			  <hr class="colorgraph"><br>
 			  
