@@ -46,9 +46,9 @@ input[type="text"]{
 }
 input[type="submit"]{
 
-    border:1px solid #6599FF;color:#fff;
+    border:1px solid #ffff99;color:#fff;
     padding:8px 35px;font-weight:bold;
-    background:#6599FF;
+    background:#fd9531;
     margin-left: 235px;
 }
 textarea{ border:1px solid #ddd;width:296px;}
