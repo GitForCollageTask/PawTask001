@@ -3,9 +3,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var routes = require('./routes');
-var signup = require('./routes/signup');
 var mysql = require('mysql');
-var router = express.Router();
+//var router = express.Router();
 var session;
 var app = express();
 app.set('view engine', 'ejs');
@@ -22,10 +21,13 @@ app.use(session({
     saveUninitialized:true
 }));
 app.get('/', routes.home);
-app.get('/sign-up', routes.signup);
+app.get('/sign-up/add', routes.signup);
 app.get('/admin', routes.admin);
+app.post('/sign-up/add', routes.save);
 app.post('/admin', routes.session);
-app.get('/redirects', routes.redirect);
+app.get('/redirects', routes.redirects);
 app.post('/homeAdmin', routes.homeAdmin);
 app.get('*', routes.notFound);
 app.listen('3000', routes.listen);
+
+module.exports = app;
