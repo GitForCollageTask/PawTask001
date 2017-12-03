@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<% include partials/head.ejs %>
+        <title><%= title %></title>
+    </head>
+    <body>
+         <div class="data-table">
+            <table border="1" cellpadding="7" cellspacing="7">
+                <tr>
+                    <th>Id Masjid</th>
+                    <th>Nama Masjid</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>No Telepon</th>
+                    <th width="120px">Action</th>
+                </tr>
+                               
+                <% if(data.length){ 
+                                
+                 for(var i = 0;i < data.length;i++) { %>
+                 
+                <tr>
+                   
+                    <td><%=data[i].id_masjid%></td>
+                    <td><%=data[i].nama_lengkap%></td>
+                    <td><%=data[i].email%></td>
+                    <td><%=data[i].username%></td>
+                    <td><%=data[i].password%></td>
+                    <td><%=data[i].no_telpon%></td>
+
+                    <td>
+                        <a class="a-inside edit" href="../customers/edit/<%=data[i].id%>">Edit</a>
+                       
+                        <a class="a-inside delete" href="../customers/delete/<%=data[i].id%>">Delete</a>
+                       
+                    </td>
+                </tr>
+            <% }
+            
+             }else{ %>
+                 <tr>
+                    <td colspan="3">No user</td>
+                 </tr>
+            <% } %>
+      
+            </table>
+     <% include partials/scripts.ejs %>   
+   </body>
+ </html>
+        
+
