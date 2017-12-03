@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2017 at 03:44 PM
+-- Generation Time: Dec 03, 2017 at 11:20 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -40,6 +40,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_masjid`, `nama_lengkap`, `email`, `username`, `password`, `no_telpon`) VALUES
+('004', 'miftahul falah', 'ibnuaziznu@gmail.com', 'ibnuaziz', 'akdhkakdlja', 97473895),
+('005', 'Salman', 'ibnuazizn@gmail.com', 'ibnuaziz', 'ibnuaziz', 2147483647),
 ('1', 'ibnuaziz', 'ibnuaziznu@gmail.com', 'ibnuazizn', 'hhhhhh', 2147483647),
 ('2', 'Ibnu Aziz Nu', 'ibnuazizn@gmail.com', 'ibnuazizn', 'ibnuaziz', 2147483647),
 ('3', 'Ibnu Aziz Nu', 'ibnuazizn@gmail.com', 'ibnuazizn', 'ibnuaziz', 2147483647);
