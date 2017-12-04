@@ -16,7 +16,7 @@ height: 60px;
 	width: 600px;
 	height: 80px;
 	margin-left: 80px;
-	background: rebeccapurple;
+	background: darkred;
 	margin-top: 10px;
 	float: left;
 }
@@ -31,23 +31,24 @@ height: 60px;
 }
 .search{
 	margin-top: 15px;
-	margin-left: 200px;
-	padding:8px 15px;
+	margin-left: 70px;
+	padding:8px;
 	background: #f0f8ff;
 	border:2px solid #008080;
 	width: 300px;
 }
 .button {
-	position:relative;
-	left:-4px;
-	padding:10px 15px;
-	border:0px solid #008080;
+	position : relative;
+	left:165px;
+	bottom: 40px;
+	padding:10px;
+	border:0px solid darkred;
 	background-color: #6B8E23;
 	color:#fafafa;
 	font-weight:bold;
 }
 .button:hover {
-	background: #008080;
+	background: #f5de81;
 	color:#fafafa;
 }
 	.button:active {
@@ -114,8 +115,8 @@ http://www.bootstrapzen.com/item/135/simple-login-form-logo/
 }
 
 form[role=login] {
-	color: #5d5d5d;
-	background: #f2f2f2;
+	color: #ffffff;
+	background:url(/../images/bglg.png);
 	padding: 26px;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
