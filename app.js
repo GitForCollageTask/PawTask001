@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //bodyParser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
-//session
+
 
 /*app.use(function(req, res, next) {
   var err =  new Error('Not Found');
@@ -26,12 +26,13 @@ app.use(bodyParser.urlencoded({extended:true}));
 });
 */
 
-
+//session
 app.use(session({
     secret:'askfhla09013*&*afdajfa#',
     resave:false,
     saveUninitialized:true
 }));
+
 app.get('/', routes.home);
 app.get('/sign-up/add', routes.signup);
 app.get('/admin', routes.admin);
@@ -43,3 +44,4 @@ app.get('*', routes.notFound);
 app.listen('3000', routes.listen);
 
 module.exports = app;
+module.exports = routes;
