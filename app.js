@@ -1,5 +1,8 @@
 var express = require('express');
 var path = require('path');
+var router = express.Router();
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var routes = require('./routes');
@@ -15,6 +18,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 //session
+
+/*app.use(function(req, res, next) {
+  var err =  new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+*/
+
+
 app.use(session({
     secret:'askfhla09013*&*afdajfa#',
     resave:false,
