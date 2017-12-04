@@ -5,6 +5,8 @@ var app = express();
 //var json = require('res-json');
 var session = require('express-session');
 
+
+//connection
     connection = mysql.createPool({
     host:'localhost',
     user:'root',
@@ -12,7 +14,6 @@ var session = require('express-session');
     port:3306,
     database:'simac'
 });
-
 
 exports.home = function(req, res){
     res.render('home', {
