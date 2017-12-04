@@ -7,22 +7,40 @@ var mysql = require('mysql');
 var request = require('request');
 var supertest = require('supertest');
 var should = require('should');
-var index = require('../routes/index');
 var app = require('../app');
 
-chai.use(require('chai-http'));
 var server = supertest.agent("http://localhost:3000");
 
-describe("Unit Testing Using Mocha",function(){
- it('GET /',function(){
+describe("Acces Home Page",function(){
+ it('GET /',function(done){
      server
     .get("/")
     .send({title:'Sistem Informasi Mesjid Cibiru'})
     .end(function(e, res) {
-      res.status.should.equal(200);
-      res.body.error.should.equal(false);
-      expect(res.body).to.equal({});
-      expect(res).to.have.status(404);
+      expect(res.body).to.deep.equal({});
+      expect(res).to.have.status(200);
+      done();
      });
     });
+});
+describe("Acces DB",function(){
+  it('Should connect without an error', function (done) {
+ var connection = mysql.createPool({
+    host:'localhost',
+    user:'root',
+    password:'',
+    port:3306,
+    database:'simac'
+});
+  connection.getConnection((err, connection) => {
+    try {
+      expect(connection).to.not.be.null;
+      expect({'host':'localhost'}).to.have.property('host'); 
+    } catch (error) {
+      done(error);
+    }
   });
+  connection.getConnection(done);
+ });
+});
+
