@@ -12,22 +12,24 @@ height: 60px;
 	width: 300px;
 }
 .search-form{
-	border: 1px solid black;
+	border: none;
 	width: 600px;
 	height: 80px;
-	margin-left: 80px;
+	margin-left: 0px;
 	background: darkred;
-	margin-top: 10px;
+	margin-top: 20px;
 	float: left;
 }
 .sidebar-update{
 	float: right;
-	border: 1px solid black;
+	border: none;
 	border-radius: 2px;
 	width: 320px;
-	height: 300px;
-	margin-right: 95px;
-	margin-top: 10px;
+	height:250px;
+	margin-right: 82px;
+	margin-top: 22px;
+	margin-bottom: 15px;
+    background: darkred;
 }
 .search{
 	margin-top: 15px;
