@@ -35,6 +35,8 @@ app.use(session({
 
 app.get('/', routes.home);
 app.get('/sign-up/add', routes.signup);
+app.get('/profil', routes.profil);
+app.get('/kegiatan', routes.kegiatan);
 app.get('/admin', routes.admin);
 app.post('/sign-up/add', routes.save);
 app.post('/admin', routes.session);
