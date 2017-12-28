@@ -21,9 +21,9 @@ exports.home = function(req, res){
     });
 };
 
-exports.add = function(req, res){
+/*exports.add = function(req, res){
   res.render('add_customer',{page_title:"Add Customers - Node.js"});
-};
+};*/
 
 exports.signup = function(req, res){
     res.render('sign-up', { title: 'Sign Up | SIMAC' });
