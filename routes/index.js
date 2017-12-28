@@ -86,7 +86,7 @@ exports.homeAdmin = function(req, res){
 exports.session = function(req, res){
     session = req.session;
     //res.end(JSON.stringify(req.body));
-    if(req.body.username == 'ibnuaziz' && req.body.password == 'admin'){
+    if(req.body.username == 'ibnuazizn' && req.body.password == 'admin'){
         session.uniqueID = req.body.username;
     }
     res.redirect('/redirects');
