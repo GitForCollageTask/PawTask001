@@ -38,32 +38,32 @@ exports.save = function(req, res){
             console.log(error);
         }else{
             var data = {
-            
+
             id_masjid    : input.id_masjid,
             nama_lengkap : input.nama_lengkap,
             email        : input.email,
             username     : input.username,
             password     : input.password,
-            no_telpon    : input.no_telpon 
+            no_telpon    : input.no_telpon
         };
             console.log("Connected!!");
          var query = connection.query("INSERT INTO users set ? ",data, function(err, rows){
             connection.release();
             if (err)
               console.log(err);
-         
+
              res.redirect('/sign-up/add');
         });
       };
    });
 };
-        
+
 exports.admin = function(req, res, next){
     res.render('admin', { title: 'Login Admin | SIMAC' });
 };
 
 exports.homeAdmin = function(req, res){
-    
+
         connection.getConnection(function(error, connection){
                 if(!!error){
                     connection.release();
@@ -78,11 +78,11 @@ exports.homeAdmin = function(req, res){
                          res.render('homeAdmin', { title: 'Home Admin | SIMAC', data:rows });
                     }
                 });
-                    
-            }; 
-        }); 
+
+            };
+        });
     };
-    
+
 exports.session = function(req, res){
     session = req.session;
     //res.end(JSON.stringify(req.body));

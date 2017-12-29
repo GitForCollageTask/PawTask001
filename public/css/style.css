@@ -64,7 +64,7 @@ min-height: 200px;
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
 .carousel-caption {
-display: none; 
+display: none;
 }
 }
 
@@ -78,7 +78,7 @@ over-ride "Weak" message, show font in dark grey
 }
 .progress-bar {
     color: #333;
-} 
+}
 
 /*
 Reference:
@@ -137,7 +137,7 @@ form[role=login] {
 	form[role=login] > div {
 		text-align: center;
 	}
-	
+
 .form-links {
 	text-align: center;
 	margin-top: 1em;
