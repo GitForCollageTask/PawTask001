@@ -6269,7 +6269,13 @@ button.close {
   margin-left: 60px;
   width: 600px;
   height: 300px;
-
+}
+.carousel2{
+  position: relative;
+  float: left;
+  margin-left: 56px;
+  width: 981px;
+  height: 500px;
 }
 .carousel-inner {
   position: relative;
