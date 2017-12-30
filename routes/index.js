@@ -21,7 +21,6 @@ exports.home = function(req, res){
     });
 };
 
-<<<<<<< HEAD
 exports.profil = function(req, res,next){
     res.render('profil', {
         title: "profil"
@@ -34,10 +33,7 @@ exports.kegiatan = function(req, res,next){
     });
 };
 
-exports.add = function(req, res){
-=======
 /*exports.add = function(req, res){
->>>>>>> 8006f3fb67a9481e175387989c4828483ea704cf
   res.render('add_customer',{page_title:"Add Customers - Node.js"});
 };*/
 
