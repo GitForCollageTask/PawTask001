@@ -20,24 +20,16 @@ exports.home = function(req, res){
         title: "Sistem Informasi Mesjid Cibiru"
     });
 };
-
-<<<<<<< HEAD
 exports.profil = function(req, res,next){
-    res.render('profil', {
-        title: "profil"
-    });
+    res.render('profil', {title: "Profil | SIMAC"});
 };
 
 exports.kegiatan = function(req, res,next){
-    res.render('kegiatan', {
-        title: "kegiatan"
-    });
+    res.render('kegiatan', {title: "Kegiatan | SIMAC"});
 };
 
 exports.add = function(req, res){
-=======
 /*exports.add = function(req, res){
->>>>>>> 8006f3fb67a9481e175387989c4828483ea704cf
   res.render('add_customer',{page_title:"Add Customers - Node.js"});
 };*/
 
