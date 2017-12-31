@@ -27,8 +27,7 @@ exports.profil = function(req, res,next){
 exports.kegiatan = function(req, res,next){
     res.render('kegiatan', {title: "Kegiatan | SIMAC"});
 };
-
-exports.add = function(req, res){
+//exports.add = function(req, res){
 /*exports.add = function(req, res){
   res.render('add_customer',{page_title:"Add Customers - Node.js"});
 };*/
