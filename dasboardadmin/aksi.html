@@ -65,23 +65,22 @@
                         </div>
                     </header>
                 </div>
-                <div class="user-dashboard" bgcolor="#ADE8E6">
+                <div bgcolor="#ADE8E6">
                     <img src="header1.png" style="height:165px;">
                     <h1><i>Selamat Datang di Dasboard Admin<i></h1>
                     <br>
-                    <table class='tbl-data'>
+                    <table>
                     <fieldset>
                     <legend><b>Form Input Data Masjid<b></legend>
-                    <br>
                     <p>
-                    <form action="pro_inputpeng.php" method="POST">
+                    <form action="inputdatamasjid.html" method="POST">
                     <p>
                     <label for="name"> Nama Masjid : </label><br>
-                    <input type="text" name="name" placeholder="Contoh : MASJID ILAA KHOIRI UMMAH">
+                    <input class="textfield" type="text" name="name" placeholder="Contoh : MASJID ILAA KHOIRI UMMAH">
                     </p>
                     <p>
                     <label for="image"> Gambar Masjid : </label><br>
-                    <input type='image' src='' alt='' name='gambar' width='200px' height='200px' align=''><br>
+                    <input class="textfield" type="file" name="upload_gambar" accept="image/*"><br>
                     <label for="Tipe Masjid"> Tipe Masjid : </label><br>
                     <select name="tipologimasjid">
                     <option>-Pilih Tipe Masjid-</option>
@@ -93,11 +92,10 @@
                     </select>
                     </p>
                     <p>
-                    <p>
                     <label for="alamat"> Alamat Masjid : </label><br>
-                    <input type="text" name="alamat" placeholder="Contoh : Jl. Kosambi No. 56 Pasibiru">
+                    <input class="textfield" type="text" name="alamat" placeholder="Contoh : Jl. Kosambi No. 56 Pasibiru">
                     </p>
-                    <input type="submit" value="Simpan Data">
+                    <input class="buttonform" type="submit" value="Simpan Data">
                     </form>
                     </p>
                     </fieldset>
@@ -108,8 +106,43 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+<style type="text/css">
+ .textfield{
+ width: 300px;
+ height: 25px;
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #000;
+ border: 1px double #09F;
+}
+.textfield:hover {
+ width: 300px;
+ height: 25px;
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #000;
+ border: 1px double #09F;
+ background-color: #CCC;
+}
+.buttonform {
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #FFF;
+ background-color: #09F;
+ width: 140px;
+ height: 35px;
+ font-size: 18px;
+}
+.buttonform:hover {
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #FFF;
+ background-color: #333;
+ width: 140px;
+ height: 35px;
+ font-size: 18px;
+ border: 2px solid #09F;
+}
+</style>
+
 
 <script type="text/javascript" src="javs.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
