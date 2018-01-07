@@ -16,12 +16,13 @@
                 </div>
                 <div class="navi">
                     <ul>
-                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
-                        <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Workflow</span></a></li>
-                        <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Statistics</span></a></li>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Calender</span></a></li>
-                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
-                        <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
+                        <li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                        <li class="active"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Action</span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+
                     </ul>
                 </div>
             </div>
@@ -64,10 +65,45 @@
                         </div>
                     </header>
                 </div>
-                <div class="user-dashboard">
+                <div class="user-dashboard" bgcolor="#ADE8E6">
                     <img src="header1.png" style="height:165px;">
                     <h1><i>Selamat Datang di Dasboard Admin<i></h1>
-                    
+                    <br>
+                    <table class='tbl-data'>
+                    <fieldset>
+                    <legend><b>Form Input Data Masjid<b></legend>
+                    <br>
+                    <p>
+                    <form action="pro_inputpeng.php" method="POST">
+                    <p>
+                    <label for="name"> Nama Masjid : </label><br>
+                    <input type="text" name="name" placeholder="Contoh : MASJID ILAA KHOIRI UMMAH">
+                    </p>
+                    <p>
+                    <label for="image"> Gambar Masjid : </label><br>
+                    <input type='image' src='' alt='' name='gambar' width='200px' height='200px' align=''><br>
+                    <label for="Tipe Masjid"> Tipe Masjid : </label><br>
+                    <select name="tipologimasjid">
+                    <option>-Pilih Tipe Masjid-</option>
+                    <option value="mraya">Masjid Raya</option>
+                    <option value="magung">Masjid Agung</option>
+                    <option value="mbesar">Masjid Besar</option>
+                    <option value="mjami">Masjid Jami</option>
+                    <option value="musholla">Musholla</option> 
+                    </select>
+                    </p>
+                    <p>
+                    <p>
+                    <label for="alamat"> Alamat Masjid : </label><br>
+                    <input type="text" name="alamat" placeholder="Contoh : Jl. Kosambi No. 56 Pasibiru">
+                    </p>
+                    <input type="submit" value="Simpan Data">
+                    </form>
+                    </p>
+                    </fieldset>
+                    <p>
+                    </p>
+                    <br>
                     </div>
                 </div>
             </div>
