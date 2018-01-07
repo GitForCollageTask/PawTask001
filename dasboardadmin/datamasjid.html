@@ -15,10 +15,10 @@
                     </a>
                 </div>
                 <div class="navi">
-                    <ul>
-                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                <ul>
+                        <li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
                         <li><a href="userprofil.html"><i class="fa fa-users" aria-hidden="true"></i><span class="hidden-xs hidden-sm">User Profil</span></a></li>
-                        <li><a href="datamasjid.html"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Data Masjid</span></a></li>
+                        <li class="active"><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Data Masjid</span></a></li>
                         <li><a href="datakegiatan.html"><i class="fa fa-bullhorn" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Data Kegiatan</span></a></li>
                         <li><a href="datapengurus.html"><i class="fa fa-asl-interpreting" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Data Pengurus</span></a></li>
                         <li><a href="logout.html"><i class="glyphicon glyphicon-off" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Log Out</span></a></li>
@@ -64,17 +64,73 @@
                         </div>
                     </header>
                 </div>
-                <div class="user-dashboard" bgcolor="#ADE8E6">
-
+                <div bgcolor="#ADE8E6">
                     <img src="header1.png" style="height:165px;">
                     <h1><i>Selamat Datang di Dasboard Admin<i></h1>
-                    <img src="g1.png" style="height: 1065px; width: 1065px;">
+                    <h3>Data Masjid</h3>
+            <p>
+            <table border="1">
+            <tr>
+                <th>. ID .</th>
+                <th>. Nama Masjid .</th>
+                <th>. Alamat Masjid .</th>
+                <th>. Kelurahan Masjid .</th>
+                <th>. Tahun Berdiri .</th>
+                <th>. Status Masjid .</th>
+                <th>. Action .</th>
+            </tr>
+
+            <tr>
+                <td><?php echo $no++ ?></td>
+                <td><?php echo $r['name']; ?></td>
+                <td><?php echo $r['Alamat']; ?></td>
+                <td><?php echo $r['Kelurahan']; ?></td>
+                <td><?php echo $r['Tahun']; ?></td>
+                <td><?php echo $r['Status']; ?></td>
+                <td><a href=''>Edit |</a><a href=''> Hapus</a></td>
+             </tr>
+             </p>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+<style type="text/css">
+ .textfield{
+ width: 300px;
+ height: 25px;
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #000;
+ border: 1px double #09F;
+}
+.textfield:hover {
+ width: 300px;
+ height: 25px;
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #000;
+ border: 1px double #09F;
+ background-color: #CCC;
+}
+.buttonform {
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #FFF;
+ background-color: #09F;
+ width: 140px;
+ height: 35px;
+ font-size: 18px;
+}
+.buttonform:hover {
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #FFF;
+ background-color: #333;
+ width: 140px;
+ height: 35px;
+ font-size: 18px;
+ border: 2px solid #09F;
+}
+</style>
+
 
 <script type="text/javascript" src="javs.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
