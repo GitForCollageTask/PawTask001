@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                <div class="logo">
+                    <a hef="home.html"><img src="favicon1.png" alt="merkery_logo" class="hidden-xs hidden-sm" >
+                    </a>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                        <li class="active"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Action</span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+                        <li><a href="#"><i class="" aria-hidden=""></i><span class=""></span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                <div class="row">
+                    <header>
+                        <div class="col-md-7">
+                            <nav class="navbar-default pull-left">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                            </nav>
+                            <div class="search hidden-xs hidden-sm">
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="header-rightside">
+                                <ul class="list-inline header-top pull-right">
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="navbar-content">
+                                                    <span></span>
+                                                    <p class="text-muted small"></p>
+                                                    <div class="divider">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div bgcolor="#ADE8E6">
+                    <img src="header1.png" style="height:165px;">
+                    <h1><i>Selamat Datang di Dasboard Admin<i></h1>
+                    <br>
+                    <table>
+                    <fieldset>
+                    <legend><b>Form Input Data Masjid<b></legend>
+                    <p>
+                    <form action="inputdatamasjid.html" method="POST">
+                    <p>
+                    <label for="name"> Nama Masjid : </label><br>
+                    <input class="textfield" type="text" name="name" placeholder="Contoh : MASJID ILAA KHOIRI UMMAH">
+                    </p>
+                    <p>
+                    <label for="image"> Gambar Masjid : </label><br>
+                    <input class="textfield" type="file" name="upload_gambar" accept="image/*"><br>
+                    <label for="Tipe Masjid"> Tipe Masjid : </label><br>
+                    <select name="tipologimasjid">
+                    <option>-Pilih Tipe Masjid-</option>
+                    <option value="mraya">Masjid Raya</option>
+                    <option value="magung">Masjid Agung</option>
+                    <option value="mbesar">Masjid Besar</option>
+                    <option value="mjami">Masjid Jami</option>
+                    <option value="musholla">Musholla</option> 
+                    </select>
+                    </p>
+                    <p>
+                    <label for="alamat"> Alamat Masjid : </label><br>
+                    <input class="textfield" type="text" name="alamat" placeholder="Contoh : Jl. Kosambi No. 56 Pasibiru">
+                    </p>
+                    <input class="buttonform" type="submit" value="Simpan Data">
+                    </form>
+                    </p>
+                    </fieldset>
+                    <p>
+                    </p>
+                    <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style type="text/css">
+ .textfield{
+ width: 300px;
+ height: 25px;
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #000;
+ border: 1px double #09F;
+}
+.textfield:hover {
+ width: 300px;
+ height: 25px;
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #000;
+ border: 1px double #09F;
+ background-color: #CCC;
+}
+.buttonform {
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #FFF;
+ background-color: #09F;
+ width: 140px;
+ height: 35px;
+ font-size: 18px;
+}
+.buttonform:hover {
+ font-family: "Calibri", Gadget, sans-serif;
+ color: #FFF;
+ background-color: #333;
+ width: 140px;
+ height: 35px;
+ font-size: 18px;
+ border: 2px solid #09F;
+}
+</style>
+
+
+<script type="text/javascript" src="javs.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
